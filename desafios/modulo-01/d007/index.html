@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imagem Flexível</title>
+
+    <style>
+        media (max-width: 320px) {
+      .habilities img {
+        width: 70px;
+        height: 70px;
+      }
+        }
+        body{
+            max-width: 100vh;
+        }
+    </style>
+</head>
+<body>
+    <h1>Imagem Flexível</h1>
+
+    <p>Você está vendo a imagem completa? experimente
+        ampliar o tamanho da sua janela para aproveitar a melhor experiência &#x1F913;</p>
+
+    <source media="(max-width: 300px )" srcset="imagem/paisagem-p">
+    <img src="imagens/paisagem-p.png" alt="">
+
+    <source media="(max-width: 500px )" srcset="imagem/paisagem-m">
+    <img src="imagens/paisagem-m.png" alt="">
+
+    <source media="(max-width: 900px )" srcset="imagem/paisagem-g">
+    <img src="imagens/paisagem-g.png" alt="">
+    
+</body>
+</html>
